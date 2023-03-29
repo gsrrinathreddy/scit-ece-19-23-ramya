@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
-const pages = ['Aboutus', 'Skills', 'Hobbies'];
+const pages = ['Aboutus', 'Skills', 'Hobbies', 'Qualifications', 'Experience'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -37,7 +37,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor:"red"}}>
+    <AppBar position="static" sx={{backgroundColor:"blue"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -52,11 +52,11 @@ function Navbar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'black',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
-            POTFOLIO
+            PORTFOLIO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -90,7 +90,7 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -112,7 +112,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            PORTFOLIO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
