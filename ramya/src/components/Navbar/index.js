@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 
-const pages = ['Aboutus', 'Skills', 'Hobbies', 'Qualifications', 'Experience'];
+const pages = ['Aboutme', 'Skills', 'Hobbies', 'Qualifications', 'Experience'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -37,7 +37,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor:"blue"}}>
+    <AppBar position="static" sx={{backgroundColor:"grey"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

@@ -24,8 +24,6 @@ export default function Card3() {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-    
-  );
-
-}
+      </Card>
+      );
+      }
